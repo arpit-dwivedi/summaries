@@ -9,6 +9,7 @@ This is a simple three layer network, one input layer, one hidden and one output
 
 One of the best example to undestand DNN is Handwritten digit recognition for which usually MNIST dataset is used, which contains 60,000 training images and 10,000 testing images taken from American Census Bureau employees and American high school students, like this:
 ![](4.png)
+
 Each pixel of this image will work as input in DNN, and our output layer will have 10 neuron representing the 10 digits of which only one should be activated to get the correct class. The main learning part will happen in the hidden layers as the pixel value inserted in the input layer will be activated upon some function (sigmoid, relu, tanh etc.) and a biase value can be added which will help the network to predict the near related pixel in the image. For example, through this NN will know "0" has round shape, "1" is linear and numbers like "9" will have round as wel as straight shape. So after training the NN will know the relation between each pixels and will create a score for final outputs and the final activation function will let us know then class it belongs to.
 
 
