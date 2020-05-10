@@ -90,6 +90,7 @@ Generally speaking, backpropagation has some general steps:
  </ul>
 
 <hr>
+<p style="text-align:center;">Summarizing all</p>
 <hr>
 So we can summarize neural networks and its working in these basic parts-
 <ul>
