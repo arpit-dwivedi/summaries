@@ -12,7 +12,7 @@ One of the best example to undestand DNN is Handwritten digit recognition for wh
 ![](4.png)
 
 Each pixel of this image will work as input in DNN, and our output layer will have 10 neuron representing the 10 digits of which only one should be activated to get the correct class. The main learning part will happen in the hidden layers as the pixel value inserted in the input layer will be activated upon some function (sigmoid, relu, tanh etc.) and a biase value can be added which will help the network to predict the near related pixel in the image. For example, through this NN will know "0" has round shape, "1" is linear and numbers like "9" will have round as wel as straight shape. So after training the NN will know the relation between each pixels and will create a score for final outputs and the final activation function will let us know then class it belongs to. In this way NN is used to train and predict data.
-
+<hr>
 # Gradient descent - How neural networks learn?
 To learn this technique we will devide this task in 3 **simple parts**-
 <ol>
@@ -54,7 +54,7 @@ Now, we finally know that:
 Batch gradient descent refers to calculating the derivative from all training data before calculating an update.</li><li>
 Stochastic gradient descent refers to calculating the derivative from each training data instance and calculating the update immediately.</li></ul>
 
-
+<hr>
 # Backpropagation
 To learn this technique we will devide this task in 3 **simple parts**-
 <ol>
@@ -88,10 +88,9 @@ Generally speaking, backpropagation has some general steps:
 <li>Compare your results to other implementations. play around with the learning rate, and the structure of the network.</li>
 <li>Try different initialization methods for the weights. This can have a huge effect on performance.</li>
  </ul>
-
+<hr>
 <hr>
 <p style="text-align:center;">Summarizing all</p>
-<hr>
 So we can summarize neural networks and its working in these basic parts-
 <ul>
   <li> **Neurons** - A neural network is a graph of neurons. A neuron has inputs and outputs.</li>
