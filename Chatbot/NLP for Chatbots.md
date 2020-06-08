@@ -25,6 +25,32 @@ pip install -U spacy
 ```
 #### spaCy Models
 
+A model is a yield of an algorithm or, say, an object that is created after training data using a machine learning algorithm. spaCy has lots of such models that can be placed directly in our program by downloading it just like any other Python package.
+
+To download models use:  ` sudo python3 –m spacy download en `
+
+You can now load the model via `spacy.load('en_core_web_sm')`
+
+## Fundamental Methods of NLP for Building Chatbots
+
+### 1. POS Tagging
+Part-of-speech (POS) tagging is a process where you read some text and assign parts of
+speech to each word or token, such as noun, verb, adjective, etc.
+
+This can be done using:
+
+```python
+nlp = spacy.load('en') #Loads the spacy en model into a python object
+doc = nlp(u'I am learning how to build chatbots')
+for token in doc:
+    print(token.text, token.lemma_, token.pos_, token.tag_, token.dep_, token.shape_, token.is_alpha, token.is_stop) #prints the text and POS
+```
+POS tagging needed for chatbots to reduce the complexity of understanding a text that can’t be trained or is trained with less confidence.
+
+### 2. Stemming and Lemmatization
+
+
+
 
 
 
