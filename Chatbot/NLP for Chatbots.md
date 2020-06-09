@@ -64,3 +64,70 @@ process of determining the lemma of a word based on its intended meaning.
 * It is a process of finding and classifying named entities existing in the given text into pre-defined categories.
 * The NER task is hugely dependent on the knowledge base used to train the NE extraction algorithm, so it may or may not work depending upon the provided dataset it was trained on.
 
+* As per the documentation by spaCy, models trained on the OntoNotes 5 1 corpus support the following entity types.
+
+|TYPE |DESCRIPTION|
+|-----|-----------|
+PERSON| People, including fictional
+NORP |Nationalities or religious or political groups
+FAC |Buildings, airports, highways, bridges, etc.
+ORG |Companies, agencies, institutions, etc.
+GPE |Countries, cities, states
+LOC |Non-GPE locations, mountain ranges, bodies of water
+PRODUCT |Objects, vehicles, foods, etc. (not services)
+EVENT |Named hurricanes, battles, wars, sports events, etc.
+WORK_OF_ART |Titles of books, songs, etc.
+LAW |Named documents made into laws
+LANGUAGE| Any named language
+DATE |Absolute or relative dates or periods
+TIME |Times smaller than a day
+PERCENT| Percentage, including “%”
+MONEY |Monetary values, including unit
+QUANTITY| Measurements, as of weight or distance
+ORDINAL |“first,” “second,” etc.
+CARDINAL |Numerals that do not fall under another type
+
+### 4. Stop Words
+* Stop words are high-frequency words like a, an, the, to and also that we sometimes want to filter out of a document before further processing. 
+* Stop words usually have little lexical content and do not hold much of a meaning.
+* There are about 305 stop words defined in spaCy’s stop words list. You can always define your own stop words if needed and override the existing list
+
+### 5. Dependency Parsing
+
+* The parser can also be used for sentence boundary detection and lets you iterate over base noun phrases, or “chunks.”
+
+* It helps in finding relationships between words of grammatically correct sentences.
+* It can be used for sentence boundary detection.
+* It is quite useful to find out if the user is talking about more than one context simultaneously.
+
+### 6. Noun Chunks
+
+You can think of noun chunks as a noun with the words describing the noun.
+
+### 7. Finding Similarity
+
+* Finding similarity between two words is a use-case you will find most of the time working with NLP. 
+* While building chatbots you will often come to situations where you don’t have to just find similar-looking words but also how closely related two words are logically.
+* spaCy uses high-quality word vectors to find similarity between two words using GloVe algorithm (Global Vectors for Word Representation).
+
+When building chatbots, finding similarity can be very handy for the following
+situations:
+
+
+•	 When building chatbots for recommendation
+
+•	 Removing duplicates
+
+•	 Building a spell-checker
+
+## Tokenization
+Tokenization is one of the simple yet basic concepts of NLP where we split a text into
+meaningful segments. spaCy first tokenizes the text (i.e., segments it into words and
+then punctuation and other things).
+
+
+## Regular Expressions
+
+Regular expression can come handy for some fallback for a machine learning model.
+It has the power of pattern-matching, which can ensure that the data we are processing
+is correct or incorrect.
