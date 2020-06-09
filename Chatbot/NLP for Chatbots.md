@@ -21,7 +21,7 @@ spaCy claims to provide three promary things:
 To install spaCy:
 
 ```linux
-pip install -U spacy
+pip install -U spacy==2.0.11
 ```
 #### spaCy Models
 
@@ -48,9 +48,19 @@ for token in doc:
 POS tagging needed for chatbots to reduce the complexity of understanding a text that can’t be trained or is trained with less confidence.
 
 ### 2. Stemming and Lemmatization
+* ***Stemming*** is the process of reducing inflected words to their word stem, base form.
+     > A stemming algorithm reduces the words “saying” to the root word “say,” whereas    “presumably” becomes presum. As you can see, this may or may not always be 100% correct.
 
+* ***Lemmatization*** is closely related to stemming, but lemmatization is the algorithmic
+process of determining the lemma of a word based on its intended meaning.
+     > the verb “to walk” may appear as “walk,” “walked,” “walks,” or “walking.” The base form, “walk,” that one might look up in a dictionary, is called the lemma for the word.
 
+` spaCy doesn’t have any in-built stemmer, as lemmatization is considered more correct and productive.`
 
+> Imagine you search with the text, “When will the next season of Game of Thrones be releasing?” In this case, the aforementioned query probably won’t match an article with a caption “Game of Thrones next season release date.” If we do the lemmatization of the original question before going to match the input with the documents, then we may get better results.
 
+### 3. Named-Entity Recognition
 
+* It is a process of finding and classifying named entities existing in the given text into pre-defined categories.
+* The NER task is hugely dependent on the knowledge base used to train the NE extraction algorithm, so it may or may not work depending upon the provided dataset it was trained on.
 
