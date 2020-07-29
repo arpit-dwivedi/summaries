@@ -49,6 +49,6 @@ A software developer with experience in building scalable and efficient Web and 
 ---
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Prashant-123&show_icons=true)
 ---
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Prashant-123)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=arpit-dwivedi)
 
 👇 My Favourite Repos are 👇
